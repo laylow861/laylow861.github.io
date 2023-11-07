@@ -1,7 +1,10 @@
-[한국조폐공사] 지역사랑상품권 가맹점기본정보 API 활용 예시 코드
+지역사랑상품권 가맹점기본정보 API 활용 예시 코드
 ======================
 
 본 페이지는 한국조폐공사에서 개방한 가맹점기본정보 API를 활용하여 지도에서 검색할 수 있도록 만든 예시코드입니다.
+
+# Repository
+[https://github.com/laylow861/laylow861.github.io](https://github.com/laylow861/laylow861.github.io)
 
 # 예시 화면
 ![예시 화면][screen_sample]
@@ -17,15 +20,15 @@
 `service-key-sample.js` 파일을 복사하여 `service-key.js` 신규 파일 생성
 
 ## service-key.js
-```
-// 공공데이터 포털 - API Service Key
-var apiServiceKey = "[공공데이터포털 API KEY]"; //공공데이터포털 마이페이지에서 Decoding 된 인증키
+``` javascript
+// 공공데이터 포털 - API Service Key(공공데이터포털 마이페이지에서 Decoding 된 인증키)
+var apiServiceKey = "[공공데이터포털 API KEY]";
 
-// Kakao 지도 API - App Key (javascript)
-var kakaoMapKey = "카카오맵 API javascript KEY" //javascript 버전 키
+// Kakao 지도 API - App Key (javascript 키)
+var kakaoMapKey = "카카오맵 API javascript KEY"
 
-// 사용처지역코드
-//특정 광역시/도 또는 시/군/구를 제한하여 검색서비스를 제공하고 싶을 경우, 해당 변수에 법정동 코드의 앞 5자리 입력 (지역별 코드는 `사용처지역코드.xlsx` 참고)
+// 사용처지역코드:
+// 특정 광역시/도 또는 시/군/구를 제한하여 검색서비스를 제공하고 싶을 경우, 해당 변수에 법정동 코드의 앞 5자리 입력 (지역별 코드는 `사용처지역코드.xlsx` 참고)
 var usageRgnCd = "";
 ```
 
